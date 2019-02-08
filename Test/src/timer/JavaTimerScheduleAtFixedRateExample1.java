@@ -9,11 +9,11 @@ public class JavaTimerScheduleAtFixedRateExample1 {
 		TimerTask tt = new TimerTask() {
 			@Override
 			public void run() {
-				for (int i = 1; i <= 10; i++) {
+				for (int i = 1; i <= 100; i++) {
 					System.out.println("Task Timer on Fixed Rate" + i);
 				}
 			};
 		};
-		t.scheduleAtFixedRate(tt, 500, 1000);
+		t.scheduleAtFixedRate(tt, 1000, 1000);
 	}
 }

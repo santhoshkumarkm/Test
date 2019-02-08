@@ -9,9 +9,9 @@ public class JavaTimerCancleExample1 {
 			@Override
 			public void run() {
 				for (int i = 1; i <= 10; i++) {
-					System.out.println("working on");
+					System.out.println("working on " + i);
 					if (i >= 5) {
-						System.out.println("Task is stop");
+						System.out.println("Task is stop " + i);
 						t.cancel();
 						break;
 					}

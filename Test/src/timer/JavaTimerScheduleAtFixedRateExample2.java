@@ -12,6 +12,6 @@ public class JavaTimerScheduleAtFixedRateExample2 {
 				System.out.println("Task Timer on Fixed Rate");
 			};
 		};
-		t.scheduleAtFixedRate(tt, 500, 1000);
+		t.scheduleAtFixedRate(tt, 500, 10000);
 	}
 }

@@ -9,12 +9,12 @@ public class JavaTimerScheduleExample4 {
 		TimerTask tt = new TimerTask() {
 			@Override
 			public void run() {
-				for (int i = 1; i <= 10; i++) {
-					System.out.println("working on");
+				for (int i = 1; i <= 1000; i++) {
+					System.out.println("working on " + i);
 
 				}
 			};
 		};
-		t.schedule(tt, new Date(), 1000);
+		t.schedule(tt, new Date(), 10);
 	}
 }
